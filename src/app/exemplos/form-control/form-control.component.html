@@ -1,0 +1,11 @@
+<label for="name">Nome: </label>
+<input type="text" id="name" [formControl]="nome"/>  <!--id referencia o for do label | diretiva [formControl]="nome" referencia a propriedade do form criada na classe  -->
+
+<p>Valor: {{ nome.value }}</p> <!-- Acessando valor do camo nome-->
+
+<button (click)="mostrarStatus()">Mostrar Status</button> <!--tenho que dizer que quando clicado chama o método criado na classe-->
+
+<button (click)="alterarValor()">Alterar Valor</button>
+
+<button (click)="desabilitarInput()">Desabilitar Input</button>
+<button (click)="habilitarInput()">Habilitar Input</button>
